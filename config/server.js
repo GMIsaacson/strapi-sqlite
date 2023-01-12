@@ -7,9 +7,8 @@ module.exports = ({ env }) => ({
 });
 
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
-  app: {
-    keys: ['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', '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']
+  url: env("RENDER_EXTERNAL_URL"),
+  dirs: {
+    public: "/data/public"
   },
 });
